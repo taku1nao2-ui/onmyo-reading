@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>AI陰陽リーディング｜奥様の仕事運 鑑定</title>
+<style>
+body {
+  margin: 0;
+  font-family: "Noto Sans CJK JP", "Hiragino Mincho ProN", serif;
+  background: linear-gradient(135deg, #f5f3ec, #e8e2d3);
+  overflow-x: hidden;
+}
+
+/* 金のゆらぎ */
+body::before {
+  content: "";
+  position: fixed;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(212,175,55,0.08), transparent 70%);
+  animation: floatGold 24s infinite linear;
+  z-index: 0;
+}
+
+@keyframes floatGold {
+  0%   { transform: translate(-20%, -20%); }
+  50%  { transform: translate(0%, 0%); }
+  100% { transform: translate(-20%, -20%); }
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 820px;
+  margin: 60px auto;
+  padding: 80px 60px;
+  background: rgba(255,255,255,0.96);
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 20px;
+  border: 2px solid #d4af37;
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 6px;
+  color: #5a4a1f;
+  font-weight: normal;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #888;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.decor-line {
+  width: 60px;
+  height: 2px;
+  background: #d4af37;
+  margin: 0 auto 40px auto;
+}
+
+.btn {
+  display: block;
+  margin: 10px auto 50px;
+  padding: 14px 32px;
+  background: #d4af37;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  z-index: 999;
+  position: relative;
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-family: "Noto Sans CJK JP", serif;
+}
+.btn:hover { background: #b8942a; }
+
+.section {
+  margin-bottom: 90px;
+}
+
+.section-title {
+  border-left: 5px solid #d4af37;
+  padding-left: 14px;
+  margin-bottom: 30px;
+  font-size: 21px;
+  color: #5a4a1f;
+  letter-spacing: 2px;
+}
+
+/* ブロック */
+.block {
+  margin-bottom: 42px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid rgba(212,175,55,0.2);
+}
+.block:last-child {
+  border-bottom: none;
+}
+
+.block-title {
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #6b5b2c;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.block-word {
+  background: rgba(212,175,55,0.12);
+  padding: 18px 22px;
+  border-left: 4px solid #d4af37;
+  margin-bottom: 16px;
+  font-style: italic;
+  line-height: 1.9;
+  color: #4a3b18;
+  font-size: 15px;
+}
+
+.block-desc {
+  line-height: 2.3;
+  color: #333;
+  font-size: 14px;
+}
+
+/* フェード */
+.fade {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: 1.6s ease;
+}
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.final {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 18px;
+  line-height: 2.5;
+  color: #4a3b18;
+  letter-spacing: 1px;
+}
+</style>
+</head>
+
+<body>
+
+<audio id="bgm1" loop preload="auto">
+  <source src="harugasumi.mp3" type="audio/mpeg">
+</audio>
+<audio id="bgm2" loop preload="auto">
+  <source src="mori_to_mizu.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+  <h1>AI陰陽リーディング</h1>
+  <div class="subtitle">― 奥様の教育公務員のお仕事について ―</div>
+  <div class="decor-line"></div>
+
+  <button class="btn" onclick="startAudio()">結界を開く</button>
+
+  <!-- 開式 -->
+  <div class="section fade">
+    <div class="section-title">【開式】</div>
+    <p style="line-height:2.3; color:#333; font-size:14px;">
+      鑑定の時：令和八年 弥生 二十五日　今この刻<br>
+      鑑定の地：広島県福山市<br>
+      鑑定のテーマ：奥様の教育公務員のお仕事について<br>
+      奥様の生年：昭和四十四年 長月 十二日<br><br>
+      静かに時を観ずれば、気はすでに動きの兆しを見せている。<br>
+      仕事の縁は消えていない。ただ、まだ結ばれる時を待っている。<br><br>
+      これより天地人象術の五段にて、その流れを読み解く。<br>
+      焦らず、しかし確かに、前へと進む道を共に見ていこう。
+    </p>
+  </div>
+
+  <!-- 天 -->
+  <div class="section fade">
+    <div class="section-title">【天】</div>
+
+    <div class="block">
+      <div class="block-title">① 時の位相 ― 遅れて来る運</div>
+      <div class="block-word">
+        仕事の縁は、消えてはいない。<br>
+        ただ、まだその時が満ちていないだけである。
+      </div>
+      <div class="block-desc">
+        今この刻の六壬の課式を立てるに、仕事の縁が断たれたという象は出ていない。<br>
+        むしろ「待ちの気が強く、遅れて来る縁」という特徴的な配置が見える。<br>
+        これは悪い知らせではない。すぐに動かない運であるが、動き出した時の力は確かである。<br><br>
+        教育の現場というものは、人の縁と時機が重なって初めて動く世界である。<br>
+        欠員が出る、担当が変わる、急な需要が生まれる——<br>
+        そのような「外からの呼び水」が加わった時に、一気に流れが動く構造になっている。<br><br>
+        今はまだその呼び水が来ていないだけであり、<br>
+        縁そのものは確かに存在し、時機を待っている状態と読む。<br>
+        焦りは禁物。静かに、しかし準備を怠らずに待つことが肝要である。
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-title">② 時の転換点 ― 二度の門</div>
+      <div class="block-word">
+        時は二度、門を開く。<br>
+        第一の門は春から初夏に、第二の門は秋口に訪れる。
+      </div>
+      <div class="block-desc">
+        今回の課式において、時の流れを具体的に読むと、二つの山が見えてくる。<br><br>
+        第一の門は、令和八年の春から初夏にかけて（四月後半〜七月頃）である。<br>
+        この時期は「動きが出る、話が入る、接点が生まれる」段階であり、<br>
+        面接・登録・打診など、入口が開く可能性を持つ。<br>
+        ただしこの段階では確定しない可能性もあり、あくまで「種まきの門」と見るべきである。<br><br>
+        第二の門は、同年の秋口（九月〜十一月頃）である。<br>
+        この時期こそが「現実化の本命」であり、欠員補充・年度途中採用などの形で<br>
+        実際に仕事として決まる可能性が最も高い時期と読む。<br>
+        二度の門を意識し、それぞれのタイミングに合わせた動きを準備しておくことが重要である。
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-title">③ 時の性質 ― 来年へと繋がる流れ</div>
+      <div class="block-word">
+        今年の動きが、来年の形を決める。<br>
+        令和八年は縁を結ぶ年、令和九年は形になる年と読む。
+      </div>
+      <div class="block-desc">
+        今回の課で見えているもう一つの大切な流れは、今年の動きと来年の現実化の関係である。<br>
+        万が一、今年の二つの門で決定に至らなかった場合も、流れが止まったわけではない。<br><br>
+        令和九年（二〇二七年）の春にかけて、より安定した形——<br>
+        たとえば正式採用や年度当初からの長期勤務という形で現実化する流れが見える。<br>
+        この場合、今年の小さな動きや人との接点が、来年の結果を直接引き寄せる種となる。<br><br>
+        つまり今年は「結果が出ないから動かない」ではなく、<br>
+        「来年の本番に向けて縁を耕す年」と捉えることが、最も賢い時の読み方である。<br>
+        急がず、しかし確実に、前に進み続けることが肝要である。
+      </div>
+    </div>
+  </div>
+
+  <!-- 地 -->
+  <div class="section fade">
+    <div class="section-title">【地】</div>
+
+    <div class="block">
+      <div class="block-title">① 縁の所在 ― 近在未結</div>
+      <div class="block-word">
+        縁は遠くに求むるものにあらず。<br>
+        すでに身近に在りて、ただ結ばれる時を待っている。
+      </div>
+      <div class="block-desc">
+        今回の地の読みで最も特徴的なのは、「縁はすでに近くにある」という配置である。<br>
+        新しい場所や未知の人脈に活路を求めるより、<br>
+        すでに存在する関係性の中に可能性が眠っていると見るべきである。<br><br>
+        それは教育委員会の担当者かもしれない。<br>
+        かつての職場の同僚や先輩かもしれない。<br>
+        あるいはPTAや地域のつながりの中にいる、教育現場に近い人物かもしれない。<br><br>
+        縁はすでに「存在」しているが、まだ「結ばれていない」状態にある。<br>
+        新たな縁を開拓するよりも、一度足元を見渡し、<br>
+        薄くなっていたつながりを丁寧に再確認することで、<br>
+        思いがけない扉が開かれることがある。<br>
+        福山市という地に根ざした縁の中に、鍵は隠れている。
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-title">② 縁の性質 ― 人づての縁</div>
+      <div class="block-word">
+        この縁は、直接ではなく人を介して結ばれる。<br>
+        「あの方はどうだろう」という誰かの一言が、流れを動かす。
+      </div>
+      <div class="block-desc">
+        今回の課式で特に強く出ているのは「人づての縁」の象である。<br>
+        これは、奥様が自ら強く売り込むのではなく、<br>
+        誰かが奥様のことを「思い出す」「推薦する」「紹介する」という形で<br>
+        仕事の縁が結ばれることを示している。<br><br>
+        教育の現場ではこの流れは非常にリアルである。<br>
+        「うちの学校で急に人が必要になった、あの先生どうかな」という会話が、<br>
+        一本の電話になり、面接になり、採用になる——<br>
+        このような「思い出される縁」が今回の本命ルートである。<br><br>
+        だからこそ、「自分はまだ動ける状態にある」ということを<br>
+        周囲に静かに伝え続けることが重要である。<br>
+        登録先への軽い近況連絡、元同僚へのさりげない一言——<br>
+        それらが「思い出してもらう」きっかけとなり、縁を引き寄せる。
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-title">③ 縁の展開 ― 合う環境の兆し</div>
+      <div class="block-word">
+        縁が結ばれる場所にも、相性がある。<br>
+        気が安定する環境に入ることで、力は最大限に発揮される。
+      </div>
+      <div class="block-desc">
+        地の段の最後に、縁が結ばれる「場所の性質」を読む。<br>
+        今回の課式から見えてくる、奥様に合う職場環境の象は明確である。<br><br>
+        荒れていない、落ち着いた雰囲気の学校。<br>
+        中規模以下で、人間関係が穏やかな職場。<br>
+        ベテランが多く、サポートや補助からスタートできる環境——<br>
+        このような場所においてこそ、奥様の持つ「誠実さ・丁寧さ・信頼を積み上げる力」が<br>
+        存分に発揮され、評価へと繋がっていく。<br><br>
+        逆に、競争的・激務・いきなり重い責任という環境は、<br>
+        今回の課では「続かない」という象が出ている。<br>
+        条件を少し広げながらも、環境の質を大切にした選択が、<br>
+        長期的な充実と安定をもたらす鍵となる。
+      </div>
+    </div>
+  </div>
+
+  <!-- 人 -->
+  <div class="section fade" id="shou-section">
+    <div class="section-title">【人】</div>
+
+    <div class="block">
+      <div class="block-title">① 本質 ― 昭和四十四年 長月生まれの気</div>
+      <div class="block-word">
+        この人の気、静にして強し。<br>
+        誠実さを根として、信頼を積み上げていく力を持つ。
+      </div>
+      <div class="block-desc">
+        昭和四十四年九月十二日生まれの奥様の本質を、命の側面から読む。<br>
+        この生まれの方が持つ最も際立つ特徴は「堅実さ」と「丁寧さ」である。<br>
+        華やかさや即効性より、時間をかけて築いた信頼が最終的に大きな力となる性質を持つ。<br><br>
+        教育の現場においてこれは極めて貴重な資質である。<br>
+        子どもたちや保護者、そして同僚との関係において、<br>
+        一度結ばれた信頼は深く、長く続く。<br>
+        最初からではなく「後から評価される」のがこの気の特徴であり、<br>
+        それゆえ今感じている「なかなか決まらない」という感覚は、<br>
+        運が悪いのではなく「この気の性質通り」と見るべきである。<br><br>
+        焦って結果を出そうとするより、この本質を活かして<br>
+        「じっくりと信頼を積み上げる」という姿勢こそが、最終的な成功につながる。
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-title">② 力の在処 ― 現場で光る資質</div>
+      <div class="block-word">
+        力は、試験や面接ではなく、現場で発揮される。<br>
+        動き始めた時、その真価は一気に開花する。
+      </div>
+      <div class="block-desc">
+        奥様の持つ力の本質は「現場適応力」と「人への誠実な関わり方」にある。<br>
+        これは書類や面接では十分に伝わりにくく、<br>
+        実際に現場に入ってから真価が現れるタイプの力である。<br><br>
+        だからこそ今回の六壬の読みでも示したように、<br>
+        最初から理想の条件を揃えて一発で決めようとするより、<br>
+        「小さく入って現場で評価を積み上げる」という戦略が最も力を発揮できる道である。<br><br>
+        非常勤から始まっても、補助的な役割からスタートしても、<br>
+        現場に入った瞬間から奥様の本来の力は動き始める。<br>
+        一度「この人に任せたい」と思われたなら、<br>
+        次の仕事・次の信頼は自然とついてくる。<br>
+        これが奥様の「遅れて来るが確かな運」の具体的な姿である。
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-title">③ 夫婦の気 ― 役割の相補性</div>
+      <div class="block-word">
+        動かす者と、形にする者。<br>
+        二つの気が重なる時、流れは一気に現実となる。
+      </div>
+      <div class="block-desc">
+        今回の鑑定においてもう一つ見逃せない視点は、ご夫婦の気の相補性である。<br>
+        昭和四十年十二月生まれのご主人の気は「陽・動・起点」の性質を持ち、<br>
+        奥様の「陰・安定・定着」の気と、見事に補い合う組み合わせとなっている。<br><br>
+        今回の仕事の流れは、奥様お一人の運というよりも、<br>
+        ご夫婦の気が重なることで動く「夫婦の流れ」として現れている。<br>
+        ご主人が「今動くといい時期だよ」と一言声をかけることで、<br>
+        奥様の中にあるエネルギーに火がつく——そういう構造になっている。<br><br>
+        支えるのではなく、背中を押すこと。<br>
+        結果より「動いたこと」を肯定すること。<br>
+        この関わり方が、今回の流れを最も加速させる夫婦の術である。
+      </div>
+    </div>
+  </div>
+
+  <!-- 象 -->
+  <div class="section fade">
+    <div class="section-title">【象】</div>
+
+    <div class="block">
+      <div class="block-title">① 今の象 ― 受け身すぎると遅れる相</div>
+      <div class="block-word">
+        静かに待つことは美徳なり。<br>
+        されど、待ちすぎは縁を逃す。半歩、前へ出よ。
+      </div>
+      <div class="block-desc">
+        今回の課式において最も注目すべき象のひとつが「受け身すぎると遅れる」という配置である。<br>
+        奥様の本質は「待って評価される運」であるが、<br>
+        それはまったく動かないでいいということではない。<br><br>
+        完全に受け身のまま待ち続けると、縁は来ても「タイミングがずれる」という象が出ている。<br>
+        「また今度」「もう少し準備してから」「条件が揃ったら」という思考が積み重なると、<br>
+        来ていた流れが静かに通り過ぎてしまう。<br><br>
+        求められているのは積極的な売り込みではない。<br>
+        「半歩だけ前に出ること」——これが今回の象の核心である。<br>
+        登録先への一本の連絡、元同僚への近況の一言、知人への「もし何かあれば」という言葉——<br>
+        この程度の「半歩」が、縁を引き寄せる決定的な差となる。
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-title">② なぜ今なのか ― この時期に起きている意味</div>
+      <div class="block-word">
+        試練は、鋼を鍛える火である。<br>
+        この時期を経た者は、より深い力を持って現場に立つ。
+      </div>
+      <div class="block-desc">
+        なぜ今この時期に、仕事がなかなか決まらないという状況が生じているのか。<br>
+        象の段ではその「意味」を読む。<br><br>
+        この時期は「空白」ではなく「充填期間」である。<br>
+        現場から少し離れて過ごす中で、教育というものを改めて外から見る視点が育まれている。<br>
+        現場の中にいる時には気づけなかったことに気づき、<br>
+        改めて「なぜ自分は教育に関わりたいのか」という原点が深められている時間でもある。<br><br>
+        この問いへの答えが深まるほど、現場に戻った時の関わり方はより豊かになる。<br>
+        技術や知識だけでなく、「人として何を伝えたいか」という核心が育まれている——<br>
+        それがこの時期の象の持つ本当の意味である。
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-title">③ 流れの顕現 ― 決まる時の形</div>
+      <div class="block-word">
+        「ちょうど探していた」と「あの方が浮かんだ」が重なる時、<br>
+        現実は一気に動き出す。
+      </div>
+      <div class="block-desc">
+        今回の課式から見えてくる「決まる瞬間の形」は非常に具体的である。<br>
+        それは学校側の「人が急に必要になった」という事情と、<br>
+        奥様の「ちょうど動いていた・存在が思い出された」という状況が<br>
+        ぴたりと重なった瞬間に訪れる。<br><br>
+        この「重なり」は計算して作れるものではない。<br>
+        しかし「重なりやすい状態を作ること」はできる。<br>
+        それが前述の「半歩前に出る動き」であり、「思い出してもらうためのさりげない接点」である。<br><br>
+        決まる時は突然来る。<br>
+        一本の電話、一通のメッセージ、一度の立ち話——<br>
+        そのような日常の小さな出来事が起点となって、<br>
+        一気に仕事の縁が現実化するというのが、今回の象の最終的な読みである。<br>
+        その日のために、今を丁寧に整えておくことが全てである。
+      </div>
+    </div>
+  </div>
+
+  <!-- 術 -->
+  <div class="section fade">
+    <div class="section-title">【術】</div>
+
+    <div class="block">
+      <div class="block-title">① 今すぐできる一手 ― 登録と接触の術</div>
+      <div class="block-word">
+        思い出してもらうことが、最初の術である。<br>
+        存在を伝えること——それだけで気は動き始める。
+      </div>
+      <div class="block-desc">
+        今回の六壬の流れが示す最初の術は「存在を思い出してもらう」ための行動である。<br>
+        大きく動く必要はない。以下の三つの動きが、最も効果的な一手となる。<br><br>
+        第一に、教育委員会や登録先への「現在も希望しています」という軽い近況連絡である。<br>
+        登録済みであっても、時間が経てば優先度は下がる。<br>
+        一本の連絡でその優先度が再び上がり、次の空きが出た際に名前が浮かびやすくなる。<br><br>
+        第二に、近隣の学校への直接問い合わせである。<br>
+        非常勤・補助・短期でも可能である旨を伝えることで、<br>
+        急な欠員が出た際の「候補リスト」に入れてもらえる可能性がある。<br>
+        今回の課では、この直接ルートが「当たりやすい入口」として示されている。<br><br>
+        第三に、元同僚や知人への「もし何かあれば」という一言である。<br>
+        重くいかなくていい。さりげない近況報告の中に添えるだけで十分である。<br>
+        人づての縁が今回の本命ルートであることを、忘れないでほしい。
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-title">② 面接・選考で刺さる言葉の術</div>
+      <div class="block-word">
+        通る言葉は、強さではなく安心感に宿る。<br>
+        「協調・安定・柔軟」——この三文字が鍵となる。
+      </div>
+      <div class="block-desc">
+        面接や選考の場において、今回の課から見えてくる「刺さる言葉の方向性」がある。<br>
+        奥様の場合、「安心感で通る人」という象が出ており、<br>
+        強みを前面に押し出すより「ともに働きやすい人」という印象を与えることが有効である。<br><br>
+        たとえば以下のような言葉は、今回の流れに合っている。<br>
+        「周りと連携しながら進めることを大切にしています」<br>
+        「子ども一人ひとりの様子を丁寧に見ていきたいと思っています」<br>
+        「必要な場面では柔軟に対応できます」<br><br>
+        逆に「自分のやり方でやりたい」「理想の教育を強く追求したい」という言葉は、<br>
+        今回の運気では弱くなる表現である。<br>
+        個性より調和、主張より傾聴——この姿勢が、今の時期の奥様を最も輝かせる術である。<br>
+        これは本来の奥様の気の性質とも一致しており、無理なく体現できるはずである。
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-title">③ 禁忌と勝ち筋 ― やってはいけないこと・やるべきこと</div>
+      <div class="block-word">
+        完璧な条件を待つことは、縁を見送ることである。<br>
+        小さく入り、現場で広げる——これが今回の勝ち筋である。
+      </div>
+      <div class="block-desc">
+        最後に、今回の鑑定における禁忌と勝ち筋を明確にして術の段を締めくくる。<br><br>
+        【禁忌】避けるべき行動は以下の三つである。<br>
+        一つ目は「良い条件が来るまで待つ」こと。<br>
+        条件へのこだわりが強すぎると、来ている縁を逃す配置が出ている。<br>
+        二つ目は「一発で決めようとする」こと。<br>
+        今回は段階を経て決まる運であり、焦った一発勝負は空振りに終わりやすい。<br>
+        三つ目は「準備不足を理由に動かない」こと。<br>
+        完璧な準備を待つ間に、流れは通り過ぎる。<br><br>
+        【勝ち筋】今回の最も強い成功パターンはシンプルである。<br>
+        「非常勤・短期でも可として小さく入る→現場で信頼を得る→次の話が来る」<br>
+        この流れが今回の課で最も強い象として現れている。<br>
+        迂回して本命に入る——これが令和の時代における奥様の勝ち筋である。
+      </div>
+    </div>
+  </div>
+
+  <!-- 結び -->
+  <div class="section fade">
+    <div class="section-title">【結び】</div>
+    <div class="final">
+      <p>
+        仕事の縁は、消えていない。<br><br>
+        ただ、まだ結ばれる時が来ていないだけである。<br><br>
+        半歩、前へ出よ。<br>
+        それだけで、流れは動き始める。<br><br>
+        縁は近くに在り、力は内に在り、時は今に在る。<br><br>
+        ― 令和八年 弥生　マッハ60 謹鑑 ―
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+const fades = document.querySelectorAll('.fade');
+window.addEventListener('scroll', () => {
+  fades.forEach(el => {
+    if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+      el.classList.add('show');
+    }
+  });
+});
+
+const bgm1 = document.getElementById('bgm1');
+const bgm2 = document.getElementById('bgm2');
+let started = false;
+let switched = false;
+
+function startAudio() {
+  if (started) return;
+  started = true;
+  bgm1.play().catch(() => { started = false; });
+}
+
+window.addEventListener('scroll', () => {
+  const shouSection = document.getElementById('shou-section');
+  if (!switched && started && shouSection) {
+    const rect = shouSection.getBoundingClientRect();
+    if (rect.top < window.innerHeight * 0.7) {
+      switched = true;
+      bgm1.pause();
+      bgm2.play();
+    }
+  }
+});
+</script>
+
+</body>
+</html>
