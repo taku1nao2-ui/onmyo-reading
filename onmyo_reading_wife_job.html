@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI陰陽リーディング｜奥様の音楽講師のお仕事について</title>
+<style>
+body {
+  margin: 0;
+  font-family: "Noto Sans CJK JP", "Hiragino Mincho ProN", serif;
+  background: linear-gradient(135deg, #f5f3ec, #e8e2d3);
+  overflow-x: hidden;
+}
+
+/* 金のゆらぎ */
+body::before {
+  content: "";
+  position: fixed;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(212,175,55,0.08), transparent 70%);
+  animation: floatGold 24s infinite linear;
+  z-index: 0;
+}
+
+@keyframes floatGold {
+  0%   { transform: translate(-20%, -20%); }
+  50%  { transform: translate(0%, 0%); }
+  100% { transform: translate(-20%, -20%); }
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 820px;
+  margin: 60px auto;
+  padding: 80px 60px;
+  background: rgba(255,255,255,0.96);
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 20px;
+  border: 2px solid #d4af37;
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 6px;
+  color: #5a4a1f;
+  font-weight: normal;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #888;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.decor-line {
+  width: 60px;
+  height: 2px;
+  background: #d4af37;
+  margin: 0 auto 40px auto;
+}
+
+.btn {
+  display: block;
+  margin: 10px auto 50px;
+  padding: 14px 32px;
+  background: #d4af37;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  z-index: 999;
+  position: relative;
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-family: "Noto Sans CJK JP", serif;
+}
+.btn:hover { background: #b8942a; }
+
+.section {
+  margin-bottom: 90px;
+}
+
+.section-title {
+  border-left: 5px solid #d4af37;
+  padding-left: 14px;
+  margin-bottom: 30px;
+  font-size: 21px;
+  color: #5a4a1f;
+  letter-spacing: 2px;
+}
+
+.block {
+  margin-bottom: 42px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid rgba(212,175,55,0.2);
+}
+.block:last-child {
+  border-bottom: none;
+}
+
+.block-title {
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #6b5b2c;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.block-word {
+  background: rgba(212,175,55,0.12);
+  padding: 18px 22px;
+  border-left: 4px solid #d4af37;
+  margin-bottom: 16px;
+  font-style: italic;
+  line-height: 1.9;
+  color: #4a3b18;
+  font-size: 15px;
+}
+
+.block-desc {
+  line-height: 2.3;
+  color: #333;
+  font-size: 14px;
+}
+
+.fade {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: 1.6s ease;
+}
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.final {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 18px;
+  line-height: 2.5;
+  color: #4a3b18;
+  letter-spacing: 1px;
+}
+</style>
+</head>
+
+<body>
+
+<audio id="bgm1" loop preload="auto">
+  <source src="harugasumi.mp3" type="audio/mpeg">
+</audio>
+<audio id="bgm2" loop preload="auto">
+  <source src="mori_to_mizu.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+  <h1>AI陰陽リーディング</h1>
+  <div class="subtitle">― 奥様の音楽講師のお仕事について ―</div>
+  <div class="decor-line"></div>
+
+  <button class="btn" onclick="startAudio()">結界を開く</button>
+
+  <!-- 開式 -->
+  <div class="section fade">
+    <div class="section-title">【開式】</div>
+    <p style="line-height:2.3; color:#333; font-size:14px;">
+      鑑定の時：令和八年 文月 八日　今この刻<br>
+      鑑定の地：広島県福山市<br>
+      鑑定のテーマ：奥様の音楽講師のお仕事について（契約満了後の道行き）<br>
+      奥様の生年：昭和四十四年 長月 十二日<br><br>
+      静かに時を観ずれば、气は今まさに大きな節目を迎えている。<br>
+      一つの区切りが訪れることは、終わりであると同時に、次への入口でもある。<br>
+      不安の色が濃く出ている刻であるが、これは崩れの相ではなく、変化の前の静けさと読む。<br><br>
+      これより天地人象術の五段にて、その流れを読み解く。<br>
+      焦らず、しかし確かに、次の一歩を共に見ていこう。
+    </p>
+  </div>
+
+  <!-- 天 -->
+  <div class="section fade">
+    <div class="section-title">【天】</div>
+
+    <div class="block">
+      <div class="block-title">① 時の位相 ― 節目は終わりにあらず、切り替えの合図</div>
+      <div class="block-word">
+        契約の満了は、道が絶えたことを意味しない。<br>
+        一つの流れが形を変えて、次に向かう合図である。
+      </div>
+      <div class="block-desc">
+        今回の課式を立てるに、七月十五日という節目は「凶」の象では出ていない。<br>
+        むしろ「一区切りを経て、次の形へ移る」という、切り替えの配置が強く見える。<br><br>
+        非常勤という働き方そのものが、もともと期間で区切られる性質を持つ。<br>
+        今回の満了は、奥様の力が否定された結果ではなく、<br>
+        制度上の周期が一巡しただけのことと見るべきである。<br><br>
+        今、表立って次の契約の話が来ていないのは事実であるが、<br>
+        それは「縁が絶えた」のではなく「まだ声がかかっていない」段階に過ぎない。<br>
+        この違いを、まず奥様自身が心のどこかで持っておくことが大切である。
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-title">② 時の転換点 ― 夏の静けさと、秋の動き出し</div>
+      <div class="block-word">
+        七月・八月は充填の時。<br>
+        九月から秋にかけて、次の縁が静かに動き出す。
+      </div>
+      <div class="block-desc">
+        今回の時の流れを具体的に読むと、大きく二つの段階が見える。<br><br>
+        第一段階は、契約満了直後の七月後半から八月にかけてである。<br>
+        この時期は表立った動きが少なく、静かで、時に心細く感じられる時期である。<br>
+        しかしこれは「何も起きていない」のではなく、次の縁を受け止めるための「充填の期間」である。<br><br>
+        第二段階は、二学期が始まる九月から秋口にかけてである。<br>
+        学校現場では二学期に入ると欠員や補助の需要が具体的な形で動き出しやすい。<br>
+        今回の課式でも、この時期に新しい依頼や声かけが来る象が出ている。<br>
+        夏の静けさに動揺せず、秋の動き出しに備えて足元を整えておくことが肝要である。
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-title">③ 時の性質 ― 音楽教室の仕事が、次への橋渡しとなる</div>
+      <div class="block-word">
+        今すでにある小さな仕事が、途切れることなく次に繋がる。<br>
+        細くとも、途切れない縁こそが本命である。
+      </div>
+      <div class="block-desc">
+        今回特に大切な読みは、「夜の音楽教室の仕事」の位置づけである。<br>
+        実入りが少なく心細く感じられるかもしれないが、時の流れの上ではこの仕事こそが、<br>
+        奥様を現場と繋ぎ続けている「命綱」であり、次の縁への橋渡しとなる象が出ている。<br><br>
+        収入の少なさと、縁の重要性は別のものとして見る必要がある。<br>
+        続いている仕事があるということは、奥様の名前と存在が、今も現場の中で生きているということである。<br>
+        この糸を絶やさないことが、秋以降の展開において大きな意味を持つ。
+      </div>
+    </div>
+  </div>
+
+  <!-- 地 -->
+  <div class="section fade">
+    <div class="section-title">【地】</div>
+
+    <div class="block">
+      <div class="block-title">① 縁の所在 ― すでに手の中にある縁の価値</div>
+      <div class="block-word">
+        縁は、まだ無いものではない。<br>
+        すでに手にしている小さな縁こそが、次を開く鍵である。
+      </div>
+      <div class="block-desc">
+        今回の地の読みで最も大切なのは、「今すでにある縁を軽く見ない」という視点である。<br>
+        音楽教室の仕事は収入面では小さく見えるが、<br>
+        「現場との接点」「音楽を教え続けている実績」という意味では、途切れることのない太い糸である。<br><br>
+        新しい仕事を外に探しに行くことと同じくらい、<br>
+        今ある縁を丁寧に育て、そこから広がりを作ることが今回は有効である。<br>
+        音楽教室に通う生徒の保護者や、教室を運営する人物からの紹介が、<br>
+        次の仕事に繋がる可能性が今回の課では示されている。
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-title">② 縁の性質 ― 学校区との縁は切れていない</div>
+      <div class="block-word">
+        この縁は、静かに眠っているだけである。<br>
+        呼び水が来れば、思いのほか早く動き出す。
+      </div>
+      <div class="block-desc">
+        非常勤講師として一度学校現場に入った経験と実績は、消えるものではない。<br>
+        今回の課式では、「一度繋がった現場の縁は、表面上見えなくても地下水のように続いている」という象が出ている。<br><br>
+        教育委員会の非常勤講師名簿への登録状況を確認し、<br>
+        「今後も継続して勤務を希望しています」という一言を静かに伝えておくことが、<br>
+        秋以降に声がかかる際の後押しとなる。<br>
+        大きく動く必要はない。存在を思い出してもらうための、小さな合図で十分である。
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-title">③ 環境の適性 ― 広げるより、深めるとき</div>
+      <div class="block-word">
+        今は手を広げすぎる時ではない。<br>
+        今ある場所を深めることが、遠回りに見えて近道となる。
+      </div>
+      <div class="block-desc">
+        収入への不安から、条件の異なる仕事へ一気に手を広げたくなる気持ちは自然なことである。<br>
+        しかし今回の課では、「あちこちに手を出すより、今ある音楽教室の仕事を丁寧に深める」ことが、<br>
+        結果として最も安定した流れを呼び込む配置が出ている。<br><br>
+        今の生徒との関係を大切にし、口コミや紹介が広がることを静かに待ちながら、<br>
+        並行して学校現場への「継続希望」の一言を伝えておく――<br>
+        この二本立てが、今の環境において最も力を発揮する形である。
+      </div>
+    </div>
+  </div>
+
+  <!-- 人 -->
+  <div class="section fade" id="shou-section">
+    <div class="section-title">【人】</div>
+
+    <div class="block">
+      <div class="block-title">① 本質 ― 昭和四十四年 長月生まれの気（陰の土）</div>
+      <div class="block-word">
+        この人の気、静にして厚し。<br>
+        揺れる時こそ、根を張る力が静かに働いている。
+      </div>
+      <div class="block-desc">
+        昭和四十四年九月十二日生まれの奥様は、五行でいう「陰の土」の性質を持つ。<br>
+        土は万物を育てる大地の気であり、地道に積み上げた信頼が、時間をかけて大きな実りとなる質を持つ。<br><br>
+        契約が途切れ、次が見えない今のような時期は、この気にとって最も不安を感じやすい時である。<br>
+        「積み上げてきたものが崩れてしまうのではないか」という感覚が強く出やすいが、<br>
+        土の気は本来、簡単には崩れない。今感じている不安は、性質の弱さではなく、<br>
+        誠実であるがゆえに生じる、一時的な揺らぎと見るべきである。
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-title">② 力の在処 ― 焦らず積み上げてきたものは消えない</div>
+      <div class="block-word">
+        力は、契約書の有無に宿るのではない。<br>
+        現場で積み上げた信頼の中に、すでに宿っている。
+      </div>
+      <div class="block-desc">
+        非常勤という肩書きが一時的に無くなったとしても、<br>
+        奥様がこれまで築いてきた「子どもへの向き合い方」「現場での信頼」は失われていない。<br><br>
+        今回の課式では、「肩書きより先に、人としての信頼が次の縁を呼ぶ」という象が出ている。<br>
+        音楽教室での生徒一人ひとりへの丁寧な関わりが、<br>
+        表には見えにくくとも、次の仕事の土台として確実に積み上がっている。
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-title">③ 夫婦の気 ― 支えるより、隣に立つこと</div>
+      <div class="block-word">
+        動かす者と、支える者。<br>
+        不安な時こそ、隣に立つ気が力になる。
+      </div>
+      <div class="block-desc">
+        昭和四十年十二月生まれのご主人の気は「陽・動・起点」の性質を持ち、<br>
+        奥様の「陰・安定・定着」の気と補い合う組み合わせである。<br><br>
+        今回のように奥様が不安を強く感じている時期は、<br>
+        解決策を急いで提示するよりも、「今のままで十分頑張っている」と隣で伝え続けることが、<br>
+        奥様本来の土の気を落ち着かせ、次の一歩を自然に踏み出す力になる。<br>
+        ご主人が焦らず構えていること自体が、今回の流れにおいて大きな支えとなる。
+      </div>
+    </div>
+  </div>
+
+  <!-- 象 -->
+  <div class="section fade">
+    <div class="section-title">【象】</div>
+
+    <div class="block">
+      <div class="block-title">① 今の象 ― 不安は終わりの合図ではない</div>
+      <div class="block-word">
+        暗く感じる時は、終わりの相ではなく、次への支度の相である。<br>
+        灯りは消えていない。ただ、まだ灯りが見えていないだけである。
+      </div>
+      <div class="block-desc">
+        今回の課式で最も伝えたいのが、この一点である。<br>
+        契約が切れ、次が見えず、収入が心細い――この状態は、崩れの象ではなく、<br>
+        「次の形に移る前の、静かな支度の時間」という象で出ている。<br><br>
+        今この瞬間だけを見ると先が見えず不安になるが、<br>
+        六壬の課式全体としては、道が絶たれたという配置は出ていない。<br>
+        不安な気持ちをそのまま否定せず、しかし「これは終わりではない」という事実を、<br>
+        静かに心にとどめておいてほしい。
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-title">② なぜ今なのか ― この時期に起きている意味</div>
+      <div class="block-word">
+        試練は、鋼を鍛える火である。<br>
+        この時期を経た者は、より深い落ち着きを持って現場に立つ。
+      </div>
+      <div class="block-desc">
+        なぜこの時期に契約満了と不安が重なったのか。<br>
+        今回の象の読みでは、これは「一つの働き方に固定されすぎていた状態から、一度立ち止まる時間」と読む。<br><br>
+        非常勤という立場に一区切りがつくことで、<br>
+        音楽教室での仕事の価値や、自分自身が本当に大切にしたい教え方について、<br>
+        改めて見つめ直す時間が与えられている。<br>
+        この内省の時間を経て現場に戻る時、奥様の関わり方はより深みを増す――<br>
+        それが今回の時期の持つ本当の意味である。
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-title">③ 流れの顕現 ― 決まる時の形</div>
+      <div class="block-word">
+        「ちょうど人を探していた」と「あの先生はどうだろう」が重なる時、<br>
+        流れは一気に動き出す。
+      </div>
+      <div class="block-desc">
+        今回の課式から見える「決まる瞬間の形」は、静かで、しかし確かなものである。<br>
+        それは二学期を迎えた学校側の「人手が必要になった」という事情と、<br>
+        奥様の「登録・希望を継続して伝えていた」という状態が重なった時に訪れる。<br><br>
+        あるいは、音楽教室の生徒の保護者からの何気ない一言が、<br>
+        思いがけない仕事の紹介に繋がることもある。<br>
+        いずれも派手な出来事ではなく、日常の小さなやり取りの中に、決まる時の種はすでに蒔かれている。
+      </div>
+    </div>
+  </div>
+
+  <!-- 術 -->
+  <div class="section fade">
+    <div class="section-title">【術】</div>
+
+    <div class="block">
+      <div class="block-title">① 今すぐできる一手 ― 存在を伝える術</div>
+      <div class="block-word">
+        思い出してもらうことが、最初の術である。<br>
+        大きく動かず、静かに存在を伝えるだけでよい。
+      </div>
+      <div class="block-desc">
+        今回の課が示す最初の術は、次の三つである。<br><br>
+        第一に、教育委員会・非常勤講師名簿への「継続して勤務を希望しています」という近況連絡。<br>
+        第二に、以前勤めていた学校や、近隣の学校への「非常勤・補助でも可能」という軽い問い合わせ。<br>
+        第三に、音楽教室の生徒の保護者との会話の中で、さりげなく「学校でも教えられる」ことを伝えておくこと。<br><br>
+        どれも大きな決断や勇気を必要とするものではない。<br>
+        存在を静かに伝え続けることが、秋の動き出しに向けた最も確かな準備となる。
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-title">② 不安な時期を支える言葉の術</div>
+      <div class="block-word">
+        「まだ決まっていない」ではなく「今、準備が整いつつある」と唱えよ。<br>
+        言葉が変われば、気の流れも変わる。
+      </div>
+      <div class="block-desc">
+        陰の土の気は、言葉によって静かに整えられる性質を持つ。<br>
+        「収入が少なくて心配」という思いが浮かんだ時は、<br>
+        「今の仕事があるから、次に繋がる糸が切れていない」と言い換えることを勧める。<br><br>
+        毎晩、その日にあった小さな良いこと――生徒の上達、教室での一言など――を一つだけ振り返る習慣も、<br>
+        土の気を落ち着け、次の縁を受け止める土台を整える助けとなる。
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-title">③ 禁忌と勝ち筋</div>
+      <div class="block-word">
+        今すぐ全てを決めようとすることは、縁を狭めることである。<br>
+        小さく続け、静かに広げる――これが今回の勝ち筋である。
+      </div>
+      <div class="block-desc">
+        避けるべきは、「今すぐ結果を出さなければ」と焦り、音楽教室の仕事まで見限ってしまうことである。<br>
+        今回の課では、この仕事を手放すことは「橋を落とす」ことに等しいと出ている。<br><br>
+        最も強い成功パターンは、「今ある音楽教室の仕事を続けながら、学校現場への継続希望をそっと伝えておく」<br>
+        この二つを並行して静かに進める形である。<br>
+        秋にかけて、この二つの糸のどちらか、あるいは両方から、次の縁が現実の形となって現れる。
+      </div>
+    </div>
+  </div>
+
+  <!-- 結び -->
+  <div class="section fade">
+    <div class="section-title">【結び】</div>
+    <div class="final">
+      <p>
+        仕事の縁は、消えていない。<br><br>
+        契約の満了は、終わりではなく、次への静かな支度である。<br><br>
+        今ある小さな灯りを、大切に育て続けよ。<br>
+        秋の風とともに、道は静かに開かれる。<br><br>
+        縁は近くに在り、力はすでに内に在り、時は今、整いつつある。<br><br>
+        ― 令和八年 文月　マッハ60 謹鑑 ―
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+const fades = document.querySelectorAll('.fade');
+
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) {
+    if (started) {
+      if (!switched) { bgm1.pause(); }
+      else { bgm2.pause(); }
+    }
+  } else {
+    if (started) {
+      if (!switched) { bgm1.play().catch(() => {}); }
+      else { bgm2.play().catch(() => {}); }
+    }
+  }
+});
+
+window.addEventListener('scroll', () => {
+  fades.forEach(el => {
+    if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+      el.classList.add('show');
+    }
+  });
+});
+
+const bgm1 = document.getElementById('bgm1');
+const bgm2 = document.getElementById('bgm2');
+let started = false;
+let switched = false;
+
+function startAudio() {
+  if (started) return;
+  started = true;
+  bgm1.play().catch(() => { started = false; });
+}
+
+window.addEventListener('scroll', () => {
+  const shouSection = document.getElementById('shou-section');
+  if (!switched && started && shouSection) {
+    const rect = shouSection.getBoundingClientRect();
+    if (rect.top < window.innerHeight * 0.7) {
+      switched = true;
+      bgm1.pause();
+      bgm2.play();
+    }
+  }
+});
+</script>
+
+</body>
+</html>
