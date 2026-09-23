@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI陰陽リーディング｜娘さんの仕事と恋愛について</title>
+<style>
+body {
+  margin: 0;
+  font-family: "Noto Sans CJK JP", "Hiragino Mincho ProN", serif;
+  background: linear-gradient(135deg, #f5f3ec, #e8e2d3);
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(212,175,55,0.08), transparent 70%);
+  animation: floatGold 24s infinite linear;
+  z-index: 0;
+}
+
+@keyframes floatGold {
+  0%   { transform: translate(-20%, -20%); }
+  50%  { transform: translate(0%, 0%); }
+  100% { transform: translate(-20%, -20%); }
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 820px;
+  margin: 60px auto;
+  padding: 80px 60px;
+  background: rgba(255,255,255,0.96);
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 20px;
+  border: 2px solid #d4af37;
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 6px;
+  color: #5a4a1f;
+  font-weight: normal;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #888;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.decor-line {
+  width: 60px;
+  height: 2px;
+  background: #d4af37;
+  margin: 0 auto 40px auto;
+}
+
+.btn {
+  display: block;
+  margin: 10px auto 50px;
+  padding: 14px 32px;
+  background: #d4af37;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  z-index: 999;
+  position: relative;
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-family: "Noto Sans CJK JP", serif;
+}
+.btn:hover { background: #b8942a; }
+
+.section {
+  margin-bottom: 90px;
+}
+
+.theme-title {
+  text-align: center;
+  font-size: 22px;
+  color: #b8942a;
+  letter-spacing: 6px;
+  margin: 100px 0 40px 0;
+  position: relative;
+}
+.theme-title::before, .theme-title::after {
+  content: "◆";
+  color: #d4af37;
+  font-size: 12px;
+  margin: 0 16px;
+}
+
+.section-title {
+  border-left: 5px solid #d4af37;
+  padding-left: 14px;
+  margin-bottom: 30px;
+  font-size: 21px;
+  color: #5a4a1f;
+  letter-spacing: 2px;
+}
+
+.block {
+  margin-bottom: 42px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid rgba(212,175,55,0.2);
+}
+.block:last-child {
+  border-bottom: none;
+}
+
+.block-title {
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #6b5b2c;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.block-word {
+  background: rgba(212,175,55,0.12);
+  padding: 18px 22px;
+  border-left: 4px solid #d4af37;
+  margin-bottom: 16px;
+  font-style: italic;
+  line-height: 1.9;
+  color: #4a3b18;
+  font-size: 15px;
+}
+
+.block-desc {
+  line-height: 2.3;
+  color: #333;
+  font-size: 14px;
+}
+
+.fade {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: 1.6s ease;
+}
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.final {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 18px;
+  line-height: 2.5;
+  color: #4a3b18;
+  letter-spacing: 1px;
+}
+</style>
+</head>
+
+<body>
+
+<audio id="bgm1" loop preload="auto">
+  <source src="harugasumi.mp3" type="audio/mpeg">
+</audio>
+<audio id="bgm2" loop preload="auto">
+  <source src="mori_to_mizu.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+  <h1>AI陰陽リーディング</h1>
+  <div class="subtitle">― 娘さんのお仕事と恋愛について ―</div>
+  <div class="decor-line"></div>
+
+  <button class="btn" onclick="startAudio()">結界を開く</button>
+
+  <!-- 開式 -->
+  <div class="section fade">
+    <div class="section-title">【開式】</div>
+    <p style="line-height:2.3; color:#333; font-size:14px;">
+      鑑定の時：令和八年 文月　今この刻<br>
+      鑑定の地：現在地　東京都板橋区（十月より渋谷区へ移居予定）<br>
+      鑑定のテーマ：娘様のお仕事（書道教室・書道家・ピラティス）と恋愛（相性・出会い・結婚）について<br>
+      娘様の生年月日時：平成九年 卯月 二十三日 酉の刻（十七時二十分）　広島県福山市生まれ<br><br>
+      生まれの刻が「酉の刻」であることは、静かに一つの縁を示している。<br>
+      西の空に日が傾き、一日の仕事が形を結ぶ刻に生まれた人は、<br>
+      自らの手で何かを完成させる力に恵まれる。<br><br>
+      これより仕事編・恋愛編の二部に分けて、天地人象術の五段にて読み解く。
+    </p>
+  </div>
+
+  <!-- ============ 仕事編 ============ -->
+  <div class="theme-title fade">仕事編</div>
+
+  <div class="section fade">
+    <div class="section-title">【天】渋谷の書道教室、生徒はいつ増えるか</div>
+    <div class="block">
+      <div class="block-word">
+        根を張る前に葉を茂らせようとしてはならぬ。<br>
+        十月の移居とともに、根がしっかりと張り直される。
+      </div>
+      <div class="block-desc">
+        娘様は「丁丑（陰の火）」の気を持つ。火は明るく人を照らす力を持つが、<br>
+        同時に、根を張る「土」との組み合わせがあって初めて長く燃え続けることができる。<br><br>
+        今回の課式では、板橋区での開業直後は「火が場所に馴染んでいく途中」の段階と出ている。<br>
+        大きな伸びが訪れるのは、十月に渋谷区へ移居し、新しい土地に根を下ろしてから、<br>
+        おおよそ三か月から半年ほど経た頃――年明けから春先にかけてである。<br><br>
+        焦って集客を急ぐより、今は「丁寧な指導」「一人ひとりとの関係づくり」に力を注ぐことが、<br>
+        移居後の口コミ・紹介という形で、確かな生徒数の伸びとなって返ってくる。
+      </div>
+    </div>
+  </div>
+
+  <div class="section fade">
+    <div class="section-title">【地】書道家としての仕事、いつ増えるか</div>
+    <div class="block">
+      <div class="block-word">
+        書は静かに人から人へ渡っていく。<br>
+        渋谷という場に立つこと自体が、次の依頼を呼ぶ種となる。
+      </div>
+      <div class="block-desc">
+        書道家としての活動は、教室運営とは別の流れで見る必要がある。<br>
+        今回の地の読みでは、「場所の格」が仕事の広がりに直結する配置が出ている。<br><br>
+        渋谷区という土地は、人の行き来が多く、様々な業種・文化と接点を持ちやすい場である。<br>
+        教室の開業と同時に、SNSでの作品発表や、ちょっとした展示・イベントへの参加など、<br>
+        「作品を目にする機会」を意識的に増やすことで、依頼につながる縁が育ちやすい。<br><br>
+        時期としては、教室の生徒が安定してくる年明け以降、<br>
+        並行して書道家としての依頼も少しずつ形になっていく流れが見える。<br>
+        二つの活動は競合するのではなく、互いを押し上げる関係にある。
+      </div>
+    </div>
+  </div>
+
+  <div class="section fade">
+    <div class="section-title">【人】ピラティスインストラクター、今後どうなるか</div>
+    <div class="block">
+      <div class="block-word">
+        火は動くことで、より強く輝く。<br>
+        身体を通した表現が、書とはまた違う形で人を惹きつける。
+      </div>
+      <div class="block-desc">
+        今年取得したピラティスの資格は、一見すると書道とは畑違いに見えるが、<br>
+        陰の火の気にとっては、実はとても相性の良い組み合わせである。<br>
+        書が「静」の表現なら、ピラティスは「動」の表現。この両輪を持つ人は、<br>
+        一つの分野に閉じない、幅の広い魅力を発揮しやすい。<br><br>
+        今回の課式では、ピラティスは今すぐ大きな収入の柱になるというよりも、<br>
+        「書道教室に通う生徒さんとの新しい接点」「心身を整えるご自身の土台」として、<br>
+        じわじわと効いてくる位置づけで出ている。<br>
+        急がず、まずは月に数回でもレッスンの場を持ち、経験を積み重ねていくことで、<br>
+        一、二年後には書道と並ぶもう一つの柱として育っていく可能性が見える。
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ 恋愛編 ============ -->
+  <div class="theme-title fade" id="shou-section">恋愛編</div>
+
+  <div class="section fade">
+    <div class="section-title">【天】出会いは、いつあるのか</div>
+    <div class="block">
+      <div class="block-word">
+        火は、火のそばにいる時ではなく、風が吹く時に出会いを得る。<br>
+        新しい土地・新しい人の流れの中に、その風がある。
+      </div>
+      <div class="block-desc">
+        今回の課式では、恋愛の縁もまた「十月の渋谷移居」と深く結びついている。<br>
+        新しい生活環境、新しい教室、新しい人間関係――<br>
+        これまでとは違う人の流れに触れることが、そのまま出会いの入口になる配置である。<br><br>
+        具体的には、移居後から年末にかけて、<br>
+        書道教室やピラティスのつながりを通じた紹介、あるいは新しい生活圏での偶然の出会いなど、<br>
+        「自分から探しに行く」よりも「新しい場に身を置くことで自然に訪れる」形で縁が動き出す。<br>
+        無理に婚活を頑張るより、今の生活の変化そのものを楽しむことが、結果として縁を呼び込む。
+      </div>
+    </div>
+  </div>
+
+  <div class="section fade">
+    <div class="section-title">【地】相性がいいタイプ</div>
+    <div class="block">
+      <div class="block-word">
+        火を消す水ではなく、火を支える木を求めよ。<br>
+        静かに燃やし続けてくれる存在が、本当の相性である。
+      </div>
+      <div class="block-desc">
+        陰の火の娘様にとって、最も相性が良いのは五行でいう「木」の気を持つ人である。<br>
+        木は火を育てる関係にあり、穏やかに支え、成長を後押ししてくれる存在。<br>
+        具体的には、話をじっくり聞いてくれる、娘様の情熱や創作活動を否定せず一緒に喜んでくれる、<br>
+        そんな「土台になってくれる」タイプの人が挙げられる。<br><br>
+        逆に注意したいのは、同じ火の気が強すぎる相手（情熱的だが変化が激しく、燃え尽きやすい関係）や、<br>
+        水の気が強すぎる相手（冷静さが行き過ぎて、娘様の熱を否定してしまう関係）である。<br>
+        年齢や職業よりも、「娘様の"表現したい"という気持ちを一緒に育ててくれるかどうか」が、<br>
+        相性を見極める一番の目安になる。
+      </div>
+    </div>
+  </div>
+
+  <div class="section fade">
+    <div class="section-title">【人】結婚について、今後どうなっていくか</div>
+    <div class="block">
+      <div class="block-word">
+        書も、パートナーも、急いで仕上げるものではない。<br>
+        時間をかけて整えた先にこそ、確かな形が結ばれる。
+      </div>
+      <div class="block-desc">
+        今回の課式では、結婚そのものを急ぐ流れではなく、<br>
+        「まず自分の生き方の軸（仕事）を整えることが、結婚運にも良い影響を及ぼす」<br>
+        という配置が出ている。<br><br>
+        書道教室・書道家・ピラティスという三つの活動が、渋谷移居を機に少しずつ形になっていく中で、<br>
+        娘様自身の落ち着きと自信が増し、それが自然と良縁を引き寄せる土台になる。<br>
+        時期としては、仕事の基盤が整い始める来年（令和九年）以降、<br>
+        結婚を意識できるような、安定した関係へと発展しやすい流れが見える。<br><br>
+        焦って結論を急ぐより、「今の自分を大切にしてくれる人かどうか」を軸に見極めていくことが、<br>
+        結果的に一番の近道となる。
+      </div>
+    </div>
+  </div>
+
+  <!-- 象 -->
+  <div class="section fade">
+    <div class="section-title">【象】全体に流れる象</div>
+    <div class="block">
+      <div class="block-word">
+        十月の移居は、仕事にも恋愛にも共通する「風」である。<br>
+        一つの変化が、複数の縁を同時に動かしていく。
+      </div>
+      <div class="block-desc">
+        今回最も強く出ているのは、「渋谷への移居」という一つの出来事が、<br>
+        書道教室・書道家・ピラティス・恋愛のすべてに共通する転換点になっているという象である。<br>
+        陰の火の気は、環境の変化を受けて一気に輝きを増す性質を持つ。<br>
+        この秋からの変化を、不安よりも楽しみとして迎えることが、すべての流れを良い方向へ押し進める。
+      </div>
+    </div>
+  </div>
+
+  <!-- 術 -->
+  <div class="section fade">
+    <div class="section-title">【術】今からできる一手</div>
+    <div class="block">
+      <div class="block-title">仕事の術</div>
+      <div class="block-desc">
+        ・教室の生徒には、上達の記録や作品を写真で残し、SNSで丁寧に発信していく<br>
+        ・渋谷区の地域イベントや文化施設に早めに顔を出し、土地との縁を先に結んでおく<br>
+        ・ピラティスは「収入の柱」として急がず、まず月数回、生徒さんや知人向けに小さく始める
+      </div>
+    </div>
+    <div class="block">
+      <div class="block-title">恋愛の術</div>
+      <div class="block-desc">
+        ・新しい生活圏でのお誘いには、まず一度は顔を出してみる<br>
+        ・「話をじっくり聞いてくれるか」を、相性を見極める最初の基準にする<br>
+        ・結婚を急ぐより、今の活動を楽しんでいる姿そのものが、良縁を引き寄せる力になると心得ておく
+      </div>
+    </div>
+  </div>
+
+  <!-- 結び -->
+  <div class="section fade">
+    <div class="section-title">【結び】</div>
+    <div class="final">
+      <p>
+        火は、燃やす場所を変えた時、より強く輝く。<br><br>
+        渋谷への一歩は、仕事にも恋にも、同じ風を運んでくる。<br><br>
+        急がず、しかし止まらず、今この時を丁寧に生きよ。<br>
+        縁は近くに在り、力はすでに内に在り、時は今、整いつつある。<br><br>
+        ― 令和八年 文月　マッハ60 謹鑑 ―
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+const fades = document.querySelectorAll('.fade');
+
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) {
+    if (started) {
+      if (!switched) { bgm1.pause(); }
+      else { bgm2.pause(); }
+    }
+  } else {
+    if (started) {
+      if (!switched) { bgm1.play().catch(() => {}); }
+      else { bgm2.play().catch(() => {}); }
+    }
+  }
+});
+
+window.addEventListener('scroll', () => {
+  fades.forEach(el => {
+    if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+      el.classList.add('show');
+    }
+  });
+});
+
+const bgm1 = document.getElementById('bgm1');
+const bgm2 = document.getElementById('bgm2');
+let started = false;
+let switched = false;
+
+function startAudio() {
+  if (started) return;
+  started = true;
+  bgm1.play().catch(() => { started = false; });
+}
+
+window.addEventListener('scroll', () => {
+  const shouSection = document.getElementById('shou-section');
+  if (!switched && started && shouSection) {
+    const rect = shouSection.getBoundingClientRect();
+    if (rect.top < window.innerHeight * 0.7) {
+      switched = true;
+      bgm1.pause();
+      bgm2.play();
+    }
+  }
+});
+</script>
+
+</body>
+</html>
